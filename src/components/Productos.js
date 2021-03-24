@@ -13,7 +13,7 @@ function Productos() {
       .catch(er => console.log(er))
   }, [setProductos])
 
-
+  
   return (
     <div className="App">
       <table>
@@ -22,6 +22,7 @@ function Productos() {
           return <tr><td>{pdto.title}</td><td>{pdto.price}</td><td><img width="100" src={pdto.thumbnail}></img></td></tr>
         })}
       </table>
+      
     </div>
   );
 }
